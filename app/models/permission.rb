@@ -18,6 +18,10 @@ class Permission
     'f7973e5c-8035-42ce-aaaa-31e88d182507' => '137138', # michael@
     '38c07d17-e16b-4607-8b4a-b8cb79e603bc' => '137138', # tom@
     'f53a9c87-2ad7-47cb-af7b-341d0940196d' => '137138', # ellie@
+    'd486e1aa-180c-4871-8c26-f12a590cdac3' => '137060', # tolworthtest@
+    '64f35537-9d8f-468d-ab81-e73ba328970e' => '137060', # tolworth@
+    'e72e5b58-3cfb-4c48-a47a-d0635983bdfc' => '138177',
+    '743decb8-e2e4-476a-99d1-96d590ecc400' => '137848'  # coombegirls@
   }.freeze
 
   def initialize(identifier:)

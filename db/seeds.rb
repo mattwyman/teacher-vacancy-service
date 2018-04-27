@@ -65,7 +65,7 @@ FactoryGirl.create(:vacancy,
                    school: ealing_school,
                    minimum_salary: 40000,
                    maximum_salary: 45000,
-                   pay_scale: payscale,
+                   min_pay_scale: payscale,
                    leadership: leadership)
 
 FactoryGirl.create(:vacancy,
@@ -75,7 +75,7 @@ FactoryGirl.create(:vacancy,
                    working_pattern: :part_time,
                    minimum_salary: 30000,
                    maximum_salary: 35000,
-                   pay_scale: payscale,
+                   min_pay_scale: payscale,
                    leadership: leadership)
 
 FactoryGirl.create(:vacancy,
@@ -85,7 +85,7 @@ FactoryGirl.create(:vacancy,
                    working_pattern: :part_time,
                    minimum_salary: 30000,
                    maximum_salary: 35000,
-                   pay_scale: payscale,
+                   min_pay_scale: payscale,
                    leadership: leadership)
 
 FactoryGirl.create(:vacancy,
@@ -95,6 +95,6 @@ FactoryGirl.create(:vacancy,
                    working_pattern: :part_time,
                    minimum_salary: 30000,
                    maximum_salary: 35000,
-                   pay_scale: payscale,
+                   min_pay_scale: payscale,
                    status: 1,
                    leadership: leadership)

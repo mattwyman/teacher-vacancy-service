@@ -33,20 +33,24 @@
                 wrapper_html: {id: 'subject'},
                 collection: Subject.order(:name),
                 required: false
-      = f.input :min_pay_scale_id,
-                label: t('vacancies.min_pay_scale'),
-                hint: t('vacancies.form_hints.min_pay_scale'),
-                collection: pay_scale_options,
-                label_method: :label,
-                wrapper_html: {id: 'min_pay_scale'},
-                required: false
-      = f.input :max_pay_scale_id,
-                label: t('vacancies.max_pay_scale'),
-                hint: t('vacancies.form_hints.max_pay_scale'),
-                collection: pay_scale_options.reverse,
-                label_method: :label,
-                wrapper_html: {id: 'max_pay_scale'},
-                required: false
+      %fieldset.form-group#pay_scale_range
+        %label.form-label.form-label-bold= t('vacancies.pay_scale_range')
+        %span.form-hint= t('vacancies.form_hints.pay_scale_range')
+        = f.input :min_pay_scale_id,
+                  collection: pay_scale_options,
+                  label_method: :label,
+                  label: false,
+                  required: false,
+                  wrapper: false
+
+        to
+
+        = f.input :max_pay_scale_id,
+                  collection: pay_scale_options.reverse,
+                  label_method: :label,
+                  required: false,
+                  label: false,
+                  wrapper: false
 
       %fieldset.form-group#salary_range
         %label.form-label.form-label-bold= t('vacancies.salary_range')

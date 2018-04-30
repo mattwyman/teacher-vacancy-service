@@ -9,13 +9,11 @@ class HiringStaff::SessionsController < HiringStaff::BaseController
   def create
     permission = Permission.new(identifier: oid)
 
-    if permission.valid?
-      session.update(session_id: oid)
-      session.update(urn: permission.school_urn)
-      redirect_to school_path(current_school.id)
-    else
-      redirect_to root_path, notice: I18n.t('errors.sign_in.unauthorised')
-    end
+    return redirect_to root_path, notice: I18n.t('errors.sign_in.unauthorised') unless permission.valid?
+
+    session.update(session_id: oid)
+    session.update(urn: permission.school_urn)
+    redirect_to school_path(current_school)
   end
 
   def failure

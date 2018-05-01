@@ -22,7 +22,8 @@ class Permission
     '64f35537-9d8f-468d-ab81-e73ba328970e' => '137060', # tolworth@
     'e72e5b58-3cfb-4c48-a47a-d0635983bdfc' => '138177',
     'e05f9fad-ad81-4eb7-b2f8-f3b5aa5e7d47' => '131757', # parkview@
-    '743decb8-e2e4-476a-99d1-96d590ecc400' => '137848'  # coombegirls@
+    '743decb8-e2e4-476a-99d1-96d590ecc400' => '137848', # coombegirls@
+    'cb469083-8608-4ffa-83d8-0155a9cb2995' => '140751'  # stpeterscatholicac@
   }.freeze
 
   def initialize(identifier:)
